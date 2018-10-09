@@ -16,19 +16,19 @@ export let languages = {
                 imgSrc:''
             },
             jerusalem: {
-                name:'ירושלים',
+                lable:'ירושלים',
                 description:"עיר הבירה של מדינת ישראל והעיר הגדולה ביותר בה. נכון לשנת 2016, שכנו בה כ-882 אלף תושבים. בירושלים שוכנים מוסדות הממשל של ישראל: הכנסת, בית המשפט העליון,משכן הנשיא, בית ראש הממשלה ורוב משרדי הממשלה.",
                 distance: 995,
                 imgSrc:''
             },
             meitar: {
-                name:'מיתר',
+                lable:'מיתר',
                 description:"מיתר היא מועצה מקומית במחוז הדרום בישראל, היא שוכנת בשיפוליו הדרומיים של הר חברון כ-11111111118 קילומטרים צפונית- מזרחית לבאר ששבעת הוכרזה כמועצה מקומית ב1987",
                 distance: 545,
                 imgSrc:''
             },
             migron: {
-                name:'מגרון',
+                lable:'מגרון',
                 description:'יישוב במועצה אזורית מטה בנימין, מקסים ומתאים למשפחות צעירות',
                 distance: 45,
                 imgSrc:''
@@ -44,22 +44,22 @@ export let languages = {
         },
         locations:{
             hertzelia:{
-                name:'hertzelia',
+                lable:'hertzelia',
                 description:'hertzelia',
                 stars: 4
             },
             jerusalem: {
-                name:'jerusalem',
+                lable:'jerusalem',
                 description:'ggggggg',
                 stars: 5
             },
             meitar: {
-                name: 'meitar',
+                lable: 'meitar',
                 description:'hhhhh',
                 stars:5
             },
             migron: {
-                name:'migron',
+                lable:'migron',
                 description:'so this is migronnn pa pa pa pa p ap pa pa pa good morning!',
                 stars: 3.5
             }

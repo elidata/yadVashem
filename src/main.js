@@ -4,7 +4,7 @@ import {Info} from './info';
 import {Locations} from './locations';
 import {languages} from './languages';
 import { Switch, Route, BrowserRouter} from 'react-router-dom';
-//import {  } from 'react-router';
+
 
 export class Main extends Component {
     constructor(props){
@@ -31,14 +31,21 @@ export class Main extends Component {
                 <BrowserRouter>
                     <Switch>
                         <Route exact path = "/"
-                        render = {(props) => 
-                            <CoverPage {...props}
-                            // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
-                            languageNow = {this.state.languageNow} 
-                            direction = {this.state.direction} 
-                            turnEnglish = {this.turnEnglish}
-                            turnHebrew = {this.turnHebrew}/>}/>
-                        <Route path = "/locations" component = {Locations} />
+                            render = {(props) => 
+                                <CoverPage {...props}
+                                // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
+                                languageNow = {this.state.languageNow} 
+                                direction = {this.state.direction} 
+                                turnEnglish = {this.turnEnglish}
+                                turnHebrew = {this.turnHebrew}/>
+                        }/>
+                        <Route path = "/locations"
+                            render = {(props) => 
+                                <Locations {...props}
+                                // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
+                                languageNow = {this.state.languageNow} 
+                                direction = {this.state.direction}/>
+                        }/>
                         <Route path = "/info" component = {Info}/>
                     </Switch>
                 </BrowserRouter>
@@ -47,3 +54,4 @@ export class Main extends Component {
         );
     }
 }
+
