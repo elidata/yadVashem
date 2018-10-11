@@ -1,4 +1,4 @@
-import React, { Component, Link } from 'react';
+import React, { Component } from 'react';
 import {LanguageButtons} from './languages';
 
 
@@ -14,9 +14,7 @@ export class CoverPage extends Component {
                 direction = {this.props.direction}
                 turnHebrew = {this.props.turnHebrew}/>
                 <br/><br/><br/><br/>
-                {/* <Link to = {"./locations/"}> */}
-                <button onClick={() => {this.props.history.push(`/locations`)}}>Download</button>
-                {/* </Link> */}
+                <button onClick={() => {this.props.history.push(`/locationsList`)}}>Download</button>
             </div>
         );
     }
