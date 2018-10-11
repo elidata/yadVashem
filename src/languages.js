@@ -7,68 +7,86 @@ import locationsImagesMeitar from './images/LocationsImagesMeitar.jpg'
 import locationsImagesMigron from './images/LocationsImagesMigron.jpg'
 export let languages = {
     Hebrew:{
+        path:'He',
         coverPage:{
             title:'סיור מודרך בקמפוס',
             imgSrc:CoverPageLogoHebrew
         },
         locationsList:{
-            HeHertzelia:{
+            Hertzelia:{
                 lable:'הרצליה',
                 description:"הֶרְצְלִיָּה היא עיר חוף בשרון הדרומי, כ-10 קילומטר צפונית לתל אביב, על מישור החוף. גובהה נע בין 0 ל-66 מ' מעל פני הים.' 'הרצליה נוסדה כמושבה ב-13 בדצמבר 1924 ונקראת על שם בנימין זאב הרצל, חוזה מדינת ישראל",
-                distance: 476,
-                imgSrc:locationsImagesHertzelia
             },
-            HeJerusalem: {
+            Jerusalem: {
                 lable:'ירושלים',
                 description:"עיר הבירה של מדינת ישראל והעיר הגדולה ביותר בה. נכון לשנת 2016, שכנו בה כ-882 אלף תושבים. בירושלים שוכנים מוסדות הממשל של ישראל: הכנסת, בית המשפט העליון,משכן הנשיא, בית ראש הממשלה ורוב משרדי הממשלה.",
-                distance: 995,
-                imgSrc:locationsImagesJerusalem
             },
-            HeMeitar: {
+            Meitar: {
                 lable:'מיתר',
                 description:"מיתר היא מועצה מקומית במחוז הדרום בישראל, היא שוכנת בשיפוליו הדרומיים של הר חברון כ-11111111118 קילומטרים צפונית- מזרחית לבאר ששבעת הוכרזה כמועצה מקומית ב1987",
-                distance: 545,
-                imgSrc:locationsImagesMeitar
             },
-            HeMigron: {
+            Migron: {
                 lable:'מגרון',
                 description:'יישוב במועצה אזורית מטה בנימין, מקסים ומתאים למשפחות צעירות',
-                distance: 45,
-                imgSrc:locationsImagesMigron
             }
            
         },
         
     },
     English:{
+        path: 'En',
         coverPage:{
             title:'Campus Tour Guide',
             imgSrc:CoverPageLogoEnglish
         },
         locationsList:{
-            hertzelia:{
+            Hertzelia:{
                 lable:'hertzelia',
-                description:'hertzelia',
-                imgSrc:locationsImagesHertzelia
+                description:'hertzelia kjfdkl;asfj;s jklf;djs;ldajf;kaj fjlkj;dslkjf;laf iroewrwuiroewi dfoiewuroirui',
             },
-            jerusalem: {
+            Jerusalem: {
                 lable:'jerusalem',
-                description:'ggggggg',
-                imgSrc:locationsImagesJerusalem
+                description:'ggggggg jdjf;lksru liulkdjlcmns jdlclkamxkj fsldmx,j ifjkx,ndifjs fjknxnkxj fknkclxhjf d',
             },
-            meitar: {
+            Meitar: {
                 lable: 'meitar',
-                description:'hhhhh',
-                imgSrc:locationsImagesMeitar
+                description:<p>'hhhhh'<br/>'hjdlhahjkdakkk'</p>,
             },
-            migron: {
+            Migron: {
                 lable:'migron',
                 description:'so this is migronn',
-                imgSrc:locationsImagesMigron
             }
         
         }    
-    }
+    },
+    // object for things that stay the same between languages such as images
+    Globals:{
+        coverPage:{
+        },
+        locationsList:{
+            Hertzelia:{
+                 distance: 453,
+                imgSrc:locationsImagesHertzelia,
+                handicap:true
+            },
+            Jerusalem: {
+                 distance: 345,
+                imgSrc:locationsImagesJerusalem,
+                handicap:true
+            },
+            Meitar: {
+                 distance: 435,
+                imgSrc:locationsImagesMeitar,
+                handicap:false
+            },
+            Migron: {
+                 distance: 4533,
+                imgSrc:locationsImagesMigron,
+                handicap:true
+            }
+        
+        }    
+    },
 }
 export class LanguageButtons extends Component{
     render(){

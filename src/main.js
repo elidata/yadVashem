@@ -39,7 +39,7 @@ export class Main extends Component {
                                 turnEnglish = {this.turnEnglish}
                                 turnHebrew = {this.turnHebrew}/>
                         }/>
-                        <Route path = "/locationsList"
+                        <Route path = {`/${this.state.languageNow.path}/locationsList`}
                             render = {(props) => 
                                 <LocationsList {...props}
                                 // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
@@ -47,7 +47,7 @@ export class Main extends Component {
                                 direction = {this.state.direction}/>
                         }/>
                         {/* need to add exact (need to move to the exact url page and not to a different one )*/}
-                        <Route path = "/info"
+                        <Route path = {`/${this.state.languageNow.path}/info`}
                         render = {(props) => 
                             <Info {...props}
                             // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language

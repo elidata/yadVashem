@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
+import {languages} from './languages';
 
 export class Info extends Component {
     render(){
         return(
-            <div>
-                {console.log('our URL' ,window.location.href.substr(window.location.href.lastIndexOf('/') + 1))}
-                    
+            <div dir = {this.props.direction}>                   
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
                     (window.location.href.substr(window.location.href.lastIndexOf('/') + 1)===item && 
-                    <li className="locationsList-List" >
-                       {this.props.languageNow.locationsList[item].lable}
-                       <br></br>  <br></br>
+                    <div className="locationsList-List" key = {i}>
+                       <b>{this.props.languageNow.locationsList[item].lable}</b>
+                       <br></br>
+                       <img className = {'locationImage'} 
+                       src={languages.Globals.locationsList[item].imgSrc} 
+                       alt={this.props.languageNow.locationsList[item].lable} /> 
+                       <br></br>
                        {this.props.languageNow.locationsList[item].description}
                        <br></br>   <br></br> 
-                       <button onClick={() => {this.props.history.push(`/locationsList`)}}>back</button>
+                       <button onClick={() => {this.props.history.push(`/${this.props.languageNow.path}/locationsList`)}}>back</button>
                        <br></br><br></br>    
-                    </li>
+                    </div>
                     )
                 )}
             </div>
@@ -47,30 +50,3 @@ export class Info extends Component {
 
 
 
-// console.log(Object.values(this.props.languageNow.locationsList),77777)}{
-
-
-
-// export const Info = ({ match }) => {
-    //     const Thisinfo = (Object.values(this.props.languageNow.locationsList)).find(location => location.lable === match.params.lable);
-    
-    // return (
-        //     <div dir={this.props.direction}>
-        //            <h3> 
-        //                {match.params.label}
-        //            </h3>
-//            <p>{Thisinfo.description}</p>
-        {/* {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
-                    
-                    <li className="locationsList-List" >
-                       {this.props.languageNow.locationsList[item].lable}
-                       <br></br>  <br></br>
-                       {this.props.languageNow.locationsList[item].description}
-                       <br></br>   <br></br> 
-                       <button onClick={() => {this.props.history.push(`/locationsList`)}}>back</button>
-                       <br></br><br></br>    
-                    </li>
-                )} */}
-//     </div>
-// );
-//             }

@@ -4,7 +4,6 @@ import {LanguageButtons} from './languages';
 
 export class CoverPage extends Component {
     render(){
-        console.log('coverPageHistory',window.history);
         return(
             <div dir = {this.props.direction}>
                 <img src = {this.props.languageNow.coverPage.imgSrc} alt = "Yad Vashem logo" />
@@ -14,7 +13,7 @@ export class CoverPage extends Component {
                 direction = {this.props.direction}
                 turnHebrew = {this.props.turnHebrew}/>
                 <br/><br/><br/><br/>
-                <button onClick={() => {this.props.history.push(`/locationsList`)}}>Download</button>
+                <button onClick={() => {this.props.history.push(`/${this.props.languageNow.path}/locationsList`)}}>Download</button>
             </div>
         );
     }
