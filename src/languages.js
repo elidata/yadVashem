@@ -12,6 +12,9 @@ export let languages = {
             title:'סיור מודרך בקמפוס',
             imgSrc:CoverPageLogoHebrew
         },
+        locationListPage:{
+            placeHolderSearch: 'חפש'
+        },
         locationsList:{
             Hertzelia:{
                 lable:'הרצליה',
@@ -38,6 +41,9 @@ export let languages = {
         coverPage:{
             title:'Campus Tour Guide',
             imgSrc:CoverPageLogoEnglish
+        },
+        locationListPage:{
+            placeHolderSearch: 'search'
         },
         locationsList:{
             Hertzelia:{
