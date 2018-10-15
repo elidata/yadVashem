@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import {languages} from './languages';
-
+import {Navbar} from './Navbar';
 export class Info extends Component {
     render(){
         return(
-            <div dir = {this.props.direction}>                   
+            <div dir = {this.props.direction}>      
+           <br></br>
+                <Navbar languageNow={this.props.languageNow}/>
+                <br></br>             
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
                     (window.location.href.substr(window.location.href.lastIndexOf('/') + 1)===item && 
                     <div className="locationsList-List" key = {i}>
