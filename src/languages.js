@@ -34,6 +34,12 @@ export let languages = {
             }
            
         },
+        navBar:{
+            home:'דף הבית',
+            shareAMoment:"שתפו את החברים",
+            map:"מפה של יד ושם",
+            webSite:"אתר האינטרנט של יד ושם"
+        },
         
     },
     English:{
@@ -63,6 +69,12 @@ export let languages = {
                 description:'so this is migronn',
             }
         
+        },
+        navBar:{
+            home:'Home',
+            shareAMoment:"Share a moment",
+            map:"Yad Vashem map",
+            webSite:"Yad Vashem on the web"
         }    
     },
     // object for things that stay the same between languages such as images

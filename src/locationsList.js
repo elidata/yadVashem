@@ -4,6 +4,7 @@ import iconWalkingMan from './images/iconWalkingMan.png'
 import iconHandicap from './images/iconHandicap.png'
 import {languages} from './languages';
 import {Navbar} from './Navbar';
+import {Footer} from './Footer';
 
 export class LocationsList extends Component {
     constructor(props){
@@ -22,11 +23,11 @@ export class LocationsList extends Component {
     render(){
         return(
             <div className="AllLocationsList" dir = {this.props.direction}>
+                <Navbar languageNow={this.props.languageNow} dir = {this.props.direction}/>
                 <form>
                     <input type = "text" placeholder = {this.props.languageNow.locationListPage.placeHolderSearch} name = "searchLocationList" value = {this.state.searchValue} onChange = {this.searchEventHandler} ></input>
                 </form>
                 <br></br>
-                <Navbar languageNow={this.props.languageNow}/>
                 <br></br>
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
                 (this.props.languageNow.locationsList[item].lable.toLowerCase().includes(this.state.searchValue.toLowerCase())  &&
@@ -44,10 +45,12 @@ export class LocationsList extends Component {
                                 {this.props.languageNow.locationsList[item].description}
                             </div>
                         </Link>
+                      
                     </div>
                     )
                     
                 )}
+                  {<Footer/>}  
             </div>
         );
     }

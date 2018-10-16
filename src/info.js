@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {languages} from './languages';
 import {Navbar} from './Navbar';
+import {Footer} from './Footer';
+
 export class Info extends Component {
     render(){
         return(
@@ -9,7 +11,7 @@ export class Info extends Component {
                 <Navbar languageNow={this.props.languageNow}/>
                 <br></br>             
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
-                    (window.location.href.substr(window.location.href.lastIndexOf('/') + 1)===item && 
+                    (window.location.href.substr(window.location.href.lastIndexOf('/') + 1) === item && 
                     <div className="locationsList-List" key = {i}>
                        <b>{this.props.languageNow.locationsList[item].lable}</b>
                        <br></br>
@@ -20,7 +22,8 @@ export class Info extends Component {
                        {this.props.languageNow.locationsList[item].description}
                        <br></br>   <br></br> 
                        <button onClick={() => {this.props.history.push(`/${this.props.languageNow.path}/locationsList`)}}>back</button>
-                       <br></br><br></br>    
+                       <br></br><br></br>  
+                     {<Footer languageNow={this.props.languageNow} dir = {this.props.direction}/>}  
                     </div>
                     )
                 )}

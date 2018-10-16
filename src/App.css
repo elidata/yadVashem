@@ -36,3 +36,14 @@ a {
     position: fixed;
     overflow-x: hidden;
 }
+#footer{
+    background-color: #2F4D7C;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+#NavBar_icons{
+    margin:10px;
+}
