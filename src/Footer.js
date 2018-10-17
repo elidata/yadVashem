@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import iconCoffee from './images/iconCoffee.png'
 import iconBathroom from './images/iconBathroom.png'
-import iconHome from './images/iconHome.png'
+import iconHomeFooter from './images/iconHomeFooter.png'
 
 export class Footer extends Component {
     
@@ -47,7 +47,7 @@ class Weather extends Component {
         return(
               <div dir='ltr' id = 'footer'>
                 <span>&nbsp;&nbsp;&nbsp; </span>
-                <img src={iconHome} alt ="icon Home"/>
+                <img src={iconHomeFooter} alt ="icon Home"/>
                  <span>&nbsp;&nbsp;&nbsp; </span>
                 <img src={iconBathroom} alt ="icon Bathroom"/>
                 <span>&nbsp;&nbsp;&nbsp; </span>

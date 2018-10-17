@@ -47,3 +47,6 @@ a {
 #NavBar_icons{
     margin:10px;
 }
+.header{
+    display: flex;
+}

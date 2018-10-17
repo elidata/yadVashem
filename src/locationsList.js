@@ -23,10 +23,12 @@ export class LocationsList extends Component {
     render(){
         return(
             <div className="AllLocationsList" dir = {this.props.direction}>
-                <Navbar languageNow={this.props.languageNow} dir = {this.props.direction}/>
-                <form>
-                    <input type = "text" placeholder = {this.props.languageNow.locationListPage.placeHolderSearch} name = "searchLocationList" value = {this.state.searchValue} onChange = {this.searchEventHandler} ></input>
-                </form>
+                    <div className = "header">
+                        <Navbar  languageNow={this.props.languageNow} dir = {this.props.direction}/>
+                        <form >
+                            <input  type = "text" placeholder = {this.props.languageNow.locationListPage.placeHolderSearch} name = "searchLocationList" value = {this.state.searchValue} onChange = {this.searchEventHandler} ></input>
+                        </form>
+                    </div>
                 <br></br>
                 <br></br>
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>

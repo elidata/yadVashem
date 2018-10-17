@@ -5,6 +5,7 @@ import locationsImagesHertzelia from './images/LocationsImagesHertzelia.png'
 import locationsImagesJerusalem from './images/LocationsImagesJerusalem.png'
 import locationsImagesMeitar from './images/LocationsImagesMeitar.jpg'
 import locationsImagesMigron from './images/LocationsImagesMigron.jpg'
+import clapping from './audio/clapping.mp3';
 export let languages = {
     Hebrew:{
         path:'He',
@@ -19,20 +20,24 @@ export let languages = {
             Hertzelia:{
                 lable:'הרצליה',
                 description:"הֶרְצְלִיָּה היא עיר חוף בשרון הדרומי, כ-10 קילומטר צפונית לתל אביב, על מישור החוף. גובהה נע בין 0 ל-66 מ' מעל פני הים.' 'הרצליה נוסדה כמושבה ב-13 בדצמבר 1924 ונקראת על שם בנימין זאב הרצל, חוזה מדינת ישראל",
+                vocalSrc:clapping
             },
             Jerusalem: {
                 lable:'ירושלים',
                 description:"עיר הבירה של מדינת ישראל והעיר הגדולה ביותר בה. נכון לשנת 2016, שכנו בה כ-882 אלף תושבים. בירושלים שוכנים מוסדות הממשל של ישראל: הכנסת, בית המשפט העליון,משכן הנשיא, בית ראש הממשלה ורוב משרדי הממשלה.",
+                vocalSrc:clapping
             },
             Meitar: {
                 lable:'מיתר',
                 description:"מיתר היא מועצה מקומית במחוז הדרום בישראל, היא שוכנת בשיפוליו הדרומיים של הר חברון כ-11111111118 קילומטרים צפונית- מזרחית לבאר ששבעת הוכרזה כמועצה מקומית ב1987",
+                vocalSrc:clapping
             },
             Migron: {
                 lable:'מגרון',
                 description:'יישוב במועצה אזורית מטה בנימין, מקסים ומתאים למשפחות צעירות',
+                vocalSrc:clapping
             }
-           
+            
         },
         navBar:{
             home:'דף הבית',
@@ -55,18 +60,22 @@ export let languages = {
             Hertzelia:{
                 lable:'hertzelia',
                 description:'hertzelia kjfdkl;asfj;s jklf;djs;ldajf;kaj fjlkj;dslkjf;laf iroewrwuiroewi dfoiewuroirui',
+                vocalSrc:clapping
             },
             Jerusalem: {
                 lable:'jerusalem',
                 description:'ggggggg jdjf;lksru liulkdjlcmns jdlclkamxkj fsldmx,j ifjkx,ndifjs fjknxnkxj fknkclxhjf d',
+                vocalSrc:clapping
             },
             Meitar: {
                 lable: 'meitar',
-                description:<p>'hhhhh'<br/>'hjdlhahjkdakkk'</p>,
+                description:'hhhhhhjdlhahjkdakkk',
+                vocalSrc:clapping
             },
             Migron: {
                 lable:'migron',
                 description:'so this is migronn',
+                vocalSrc:clapping
             }
         
         },

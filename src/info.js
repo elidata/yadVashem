@@ -3,6 +3,7 @@ import {languages} from './languages';
 import {Navbar} from './Navbar';
 import {Footer} from './Footer';
 
+
 export class Info extends Component {
     render(){
         return(
@@ -22,7 +23,11 @@ export class Info extends Component {
                        {this.props.languageNow.locationsList[item].description}
                        <br></br>   <br></br> 
                        <button onClick={() => {this.props.history.push(`/${this.props.languageNow.path}/locationsList`)}}>back</button>
-                       <br></br><br></br>  
+                       <audio controls>
+                       <source src= {this.props.languageNow.locationsList[item].vocalSrc} type="audio/mpeg"/>
+                        Your browser does not support the audio element.
+                        </audio>
+
                      {<Footer languageNow={this.props.languageNow} dir = {this.props.direction}/>}  
                     </div>
                     )
