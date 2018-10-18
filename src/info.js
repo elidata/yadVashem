@@ -13,23 +13,29 @@ export class Info extends Component {
            <br></br>
                 <Navbar languageNow={this.props.languageNow}/>
                 <br></br>             
+                {/* maps over all places to find the place that equills to the URL n order to display it's information */}
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
                     (window.location.href.substr(window.location.href.lastIndexOf('/') + 1) === item && 
                     <div className="locationsList-List" key = {i}>
-                       <b>{this.props.languageNow.locationsList[item].lable}</b>
+                    {/* title */}
+                       <b>{this.props.languageNow.locationsList[item].label}</b>
                        <br></br>
+                    {/* image */}
                        <img className = {'locationImage'} 
                        src={languages.Globals.locationsList[item].imgSrc} 
-                       alt={this.props.languageNow.locationsList[item].lable} /> 
+                       alt={this.props.languageNow.locationsList[item].label} /> 
                        <br></br>
+                    {/* description */}
                        {this.props.languageNow.locationsList[item].description}
-                       <br></br>   <br></br> 
+                       <br></br>   <br></br>
+                    {/*button to locations list  */}
                        <button onClick={() => {this.props.history.push(`/${this.props.languageNow.path}/locationsList`)}}>back</button>
                        <audio controls>
                        <source src= {this.props.languageNow.locationsList[item].vocalSrc} type="audio/mpeg"/>
                         Your browser does not support the audio element.
                         </audio>
-                        <h2>go to</h2>
+                    {/* options to next place */}
+                        <h2>{this.props.languageNow.info.goTo}</h2>
                         <GoTo languageNow = {this.props.languageNow} thisItem = {item}/>
                      {<Footer languageNow={this.props.languageNow} dir = {this.props.direction}/>}  
                     </div>

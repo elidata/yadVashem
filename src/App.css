@@ -30,11 +30,16 @@ a {
     overflow: hidden;
 }  
 #Nav{
-    background-color: cadetblue;
+    background-color: #eff0f2;
     z-index: 1; 
     height: 100%;
     position: fixed;
     overflow-x: hidden;
+}
+.navbarList{
+    border: 2px solid #e3e3e5;
+    margin-top: 20px;
+    padding: 10px; 
 }
 #footer{
     background-color: #2F4D7C;
@@ -43,7 +48,20 @@ a {
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 7%;
+    height: 8%;
+    display: flex;
+    justify-content: flex-start;
+}
+.footerIcon{
+    height: 32px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.weather{
+    font-size: 1.1em;
+    font-family: cursive;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #NavBar_icons{
     margin:10px;
@@ -57,3 +75,17 @@ a {
     position: absolute;;
     height: 90%;
 }
+/* .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */ 
