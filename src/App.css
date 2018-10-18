@@ -43,10 +43,17 @@ a {
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 7%;
 }
 #NavBar_icons{
     margin:10px;
 }
 .header{
     display: flex;
+}
+.overflow{
+    width:95%; 
+    overflow-y:scroll; 
+    position: absolute;;
+    height: 90%;
 }

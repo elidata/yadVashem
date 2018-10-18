@@ -11,6 +11,7 @@ export class LocationsList extends Component {
         super(props);
         this.state = {
             searchValue: "",
+            currentArrayOfPlaces:[]
         }
 
     
@@ -20,9 +21,31 @@ export class LocationsList extends Component {
     searchEventHandler(event){
         this.setState({searchValue: event.target.value});
     }
+    componentWillMount(){
+        function compare (a,b){
+            const idA = a.id
+            const idB =b.id
+            let comparison = 0;
+            if (idA>idB) {
+                comparison= 1
+            }else if (idA<idB){
+                comparison= -1
+            }
+            return comparison
+        } 
+         let sortFunction =  Object.values(this.props.languageNow.locationsList).sort(compare);
+         console.log("fff", sortFunction)
+         this.setState({currentArrayOfPlaces: sortFunction});
+         console.log('kkk',this.state.currentArrayOfPlaces)
+        
+    }
+   
     render(){
+        let ids = Object.keys(this.props.languageNow.locationsList).map((item, i) =>
+        {return this.props.languageNow.locationsList[item].id}).sort();
+        console.log("ids", ids)
         return(
-            <div className="AllLocationsList" dir = {this.props.direction}>
+            <div className="AllLocationsList  overflow" dir = {this.props.direction}>
                     <div className = "header">
                         <Navbar  languageNow={this.props.languageNow} dir = {this.props.direction}/>
                         <form >
@@ -31,9 +54,12 @@ export class LocationsList extends Component {
                     </div>
                 <br></br>
                 <br></br>
+                
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
-                (this.props.languageNow.locationsList[item].lable.toLowerCase().includes(this.state.searchValue.toLowerCase())  &&
-                    <div className="aLocation" key = {this.props.languageNow.locationsList[item].lable}>
+                (this.props.languageNow.locationsList[item].id.toString().toLowerCase().includes(this.state.searchValue.toLowerCase())  &&
+                    <div className="aLocation" key = {this.props.languageNow.locationsList[item].id}>
+                    {/* {Object.values(this.props.languageNow.locationsList).sort} 
+                    {console.log(Object.values(this.props.languageNow.locationsList[item].id))} */}
                         <Link to = {`/${this.props.languageNow.path}/info/${item}`}>
                             <img className = {`${this.props.direction}locationListImage`} 
                             src={languages.Globals.locationsList[item].imgSrc} 
@@ -45,6 +71,7 @@ export class LocationsList extends Component {
                                 {languages.Globals.locationsList[item].handicap === true && 
                                 <img src = {iconHandicap} alt = "iconHandicap"/> }<br/>
                                 {this.props.languageNow.locationsList[item].description}
+                                {this.props.languageNow.locationsList[item].id}
                             </div>
                         </Link>
                       
@@ -52,7 +79,12 @@ export class LocationsList extends Component {
                     )
                     
                 )}
-                  {<Footer/>}  
+                
+                  {<Footer/>} 
+                  {console.log('all locations' , Object.keys(this.props.languageNow.locationsList).map((item, i) =>
+                    {return this.props.languageNow.locationsList[item].id}).sort( 
+
+                    ))}
             </div>
         );
     }

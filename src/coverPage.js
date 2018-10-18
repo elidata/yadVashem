@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {LanguageButtons} from './languages';
+import {LanguageButtons} from './languageButtons';
 
 
 export class CoverPage extends Component {

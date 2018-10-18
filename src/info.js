@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import {languages} from './languages';
 import {Navbar} from './Navbar';
 import {Footer} from './Footer';
+import {GoTo} from './GoTo';
+
 
 
 export class Info extends Component {
     render(){
         return(
-            <div dir = {this.props.direction}>      
+            <div dir = {this.props.direction} className = "overflow">      
            <br></br>
                 <Navbar languageNow={this.props.languageNow}/>
                 <br></br>             
@@ -27,7 +29,8 @@ export class Info extends Component {
                        <source src= {this.props.languageNow.locationsList[item].vocalSrc} type="audio/mpeg"/>
                         Your browser does not support the audio element.
                         </audio>
-
+                        <h2>go to</h2>
+                        <GoTo languageNow = {this.props.languageNow} thisItem = {item}/>
                      {<Footer languageNow={this.props.languageNow} dir = {this.props.direction}/>}  
                     </div>
                     )

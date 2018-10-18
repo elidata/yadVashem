@@ -1,0 +1,28 @@
+{
+ "distances":{
+     "Hertzelia":{
+        "Hertzelia":null,
+        "Jerusalem":345,
+        "Meitar":76,
+        "Migron":98
+     },
+     "Jerusalem":{
+        "Hertzelia":345,
+        "Jerusalem1":null,
+        "Meitar":476,
+        "Migron":938
+     },
+     "Meitar":{
+        "Hertzelia":76,
+        "Jerusalem":476,
+        "Meitar":null,
+        "Migron":98
+     },
+     "Migron":{
+        "Hertzelia":98,
+        "Jerusalem":938,
+        "Meitar":98,
+        "Migron":null
+     }
+ }   
+}

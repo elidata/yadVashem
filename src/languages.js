@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import CoverPageLogoEnglish from './images/CoverPageLogoEnglish.png'
 import CoverPageLogoHebrew from './images/CoverPageLogoHebrew.png'
 import locationsImagesHertzelia from './images/LocationsImagesHertzelia.png'
@@ -20,23 +19,28 @@ export let languages = {
             Hertzelia:{
                 lable:'הרצליה',
                 description:"הֶרְצְלִיָּה היא עיר חוף בשרון הדרומי, כ-10 קילומטר צפונית לתל אביב, על מישור החוף. גובהה נע בין 0 ל-66 מ' מעל פני הים.' 'הרצליה נוסדה כמושבה ב-13 בדצמבר 1924 ונקראת על שם בנימין זאב הרצל, חוזה מדינת ישראל",
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:21
             },
             Jerusalem: {
                 lable:'ירושלים',
                 description:"עיר הבירה של מדינת ישראל והעיר הגדולה ביותר בה. נכון לשנת 2016, שכנו בה כ-882 אלף תושבים. בירושלים שוכנים מוסדות הממשל של ישראל: הכנסת, בית המשפט העליון,משכן הנשיא, בית ראש הממשלה ורוב משרדי הממשלה.",
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:22
             },
             Meitar: {
                 lable:'מיתר',
                 description:"מיתר היא מועצה מקומית במחוז הדרום בישראל, היא שוכנת בשיפוליו הדרומיים של הר חברון כ-11111111118 קילומטרים צפונית- מזרחית לבאר ששבעת הוכרזה כמועצה מקומית ב1987",
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:24
             },
             Migron: {
                 lable:'מגרון',
                 description:'יישוב במועצה אזורית מטה בנימין, מקסים ומתאים למשפחות צעירות',
-                vocalSrc:clapping
-            }
+                vocalSrc:clapping,
+                id:23
+            },
+            
             
         },
         navBar:{
@@ -60,22 +64,26 @@ export let languages = {
             Hertzelia:{
                 lable:'hertzelia',
                 description:'hertzelia kjfdkl;asfj;s jklf;djs;ldajf;kaj fjlkj;dslkjf;laf iroewrwuiroewi dfoiewuroirui',
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:11
             },
             Jerusalem: {
                 lable:'jerusalem',
                 description:'ggggggg jdjf;lksru liulkdjlcmns jdlclkamxkj fsldmx,j ifjkx,ndifjs fjknxnkxj fknkclxhjf d',
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:12
             },
             Meitar: {
                 lable: 'meitar',
                 description:'hhhhhhjdlhahjkdakkk',
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:13
             },
             Migron: {
                 lable:'migron',
                 description:'so this is migronn',
-                vocalSrc:clapping
+                vocalSrc:clapping,
+                id:14
             }
         
         },
@@ -115,14 +123,3 @@ export let languages = {
         }    
     },
 }
-export class LanguageButtons extends Component{
-    render(){
-      return(
-        <div dir = {this.props.direction}>
-          <h1>{this.props.languageNow.coverPage.title}</h1>
-          <button onClick = {this.props.turnEnglish} >English</button>
-          <button onClick = {this.props.turnHebrew} >עברית</button>
-        </div>
-      );
-    }
-  }

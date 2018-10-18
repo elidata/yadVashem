@@ -19,7 +19,6 @@ export class Navbar extends Component {
     render(){
         return(
            <div dir = {this.props.direction}>
-           {console.log('abcd', this.props.languageNow.navBar.home)}
                <button style={{display:`${this.state.displayButtio}`}} onClick={this.HandleNav}><img src={iconMenu} alt ="Menu icon"/></button>
                <div id="Nav" style={{width:` ${this.state.width}%`}}>
                <div id = 'NavBar_icons'>
