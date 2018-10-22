@@ -43,7 +43,7 @@ export class GoTo extends Component {
                         (item, i) =>
                             (window.location.href.substr(window.location.href.lastIndexOf('/') + 1) !== this.state.chosenDistance[i].name &&
                                 <Link to={`/${this.props.languageNow.path}/info/${this.state.chosenDistance[i].name}`}>
-                                    <li key={i} value={item}>{Object.keys(this.locationsList).map((location, index) =>
+                                    <li className = "goToList" key={i} value={item}>{Object.keys(this.locationsList).map((location, index) =>
                                         (location === this.state.chosenDistance[i].name && this.locationsList[location].label))}
                                         &nbsp;
                                      {this.state.chosenDistance[i].distance}</li>

@@ -39,7 +39,7 @@ a {
 .navbarList{
     border: 2px solid #e3e3e5;
     margin-top: 20px;
-    padding: 10px; 
+    padding: 10px;
 }
 #footer{
     background-color: #2F4D7C;
@@ -78,6 +78,13 @@ a {
 #linkToGoTo{
     border-radius: 10px;
     border: 1px solid black;
+}
+.goToList{
+    list-style-type: none;
+    border: 2px solid #f4f5fc;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 15%;
 }
 /* .loader {
     border: 16px solid #f3f3f3;
