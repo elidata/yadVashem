@@ -10,6 +10,7 @@ import {Footer} from './Footer';
 export class LocationsList extends Component {
     constructor(props){
         super(props);
+        this.locationsList =this.props.languageNow.locationsList
         this.state = {
             searchValue: "",
             currentArrayOfPlaces:[]
@@ -22,22 +23,6 @@ export class LocationsList extends Component {
     searchEventHandler(event){
         this.setState({searchValue: event.target.value});
     }
-    // for sorting items
-    // componentWillMount(){
-    //     function compare (a,b){
-    //         const idA = a.id
-    //         const idB =b.id
-    //         let comparison = 0;
-    //         if (idA>idB) {
-    //             comparison= 1
-    //         }else if (idA<idB){
-    //             comparison= -1
-    //         }
-    //         return comparison
-    //     } 
-    //      let sortFunction =  Object.values(this.props.languageNow.locationsList).sort(compare);
-    //      this.setState({currentArrayOfPlaces: sortFunction});        
-    // }
    
     render(){
         return(
@@ -51,18 +36,18 @@ export class LocationsList extends Component {
                     </div>
                 <br></br><br></br>
                 {/* maps over all places in order to display diffarent information about them in a list */}
-                {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
+                {Object.keys(this.locationsList).map((item, i) =>
                 // next line refers to the search by id
-                (this.props.languageNow.locationsList[item].id.toString().toLowerCase().includes(this.state.searchValue.toLowerCase())  &&
-                    <div className="aLocation" key = {this.props.languageNow.locationsList[item].id}>
+                (this.locationsList[item].id.toString().toLowerCase().includes(this.state.searchValue.toLowerCase())  &&
+                    <div className="aLocation" key = {this.locationsList[item].id}>
                         <Link to = {`/${this.props.languageNow.path}/info/${item}`}>
                             <img className = {`${this.props.direction}locationListImage`} 
                             src={languages.Globals.locationsList[item].imgSrc} 
-                            alt={this.props.languageNow.locationsList[item].label} />
+                            alt={this.locationsList[item].label} />
                             <div className="aLocationsText">
                             {/* icon amount of steps */}
                             &nbsp;
-                                <b>{this.props.languageNow.locationsList[item].label}</b>
+                                <b>{this.locationsList[item].label}</b>
                                 <img src = {iconWalkingMan} alt = "amount of steps"/> 
                                 {languages.Globals.locationsList[item].distance}
                             {/* icon accessible */}
@@ -74,7 +59,7 @@ export class LocationsList extends Component {
                                 {languages.Globals.locationsList[item].wheelchair=== true && 
                                 <img src = {iconWheelchair} alt = "iconWheelchair"/> }<br/>
                             {/* description about place */}
-                                {this.props.languageNow.locationsList[item].description}
+                                {this.locationsList[item].description}
                                 
                             </div>
                         </Link>

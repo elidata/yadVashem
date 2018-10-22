@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import {languages} from './languages';
 import {Navbar} from './Navbar';
 import {Footer} from './Footer';
-import {GoTo} from './GoTo';
-
+import {Link} from 'react-router-dom';
 
 
 export class Info extends Component {
@@ -35,8 +34,9 @@ export class Info extends Component {
                         Your browser does not support the audio element.
                         </audio>
                     {/* options to next place */}
-                        <h2>{this.props.languageNow.info.goTo}</h2>
-                        <GoTo languageNow = {this.props.languageNow} thisItem = {item}/>
+                        <Link to = {`/${this.props.languageNow.path}/goTo/${item}`}>
+                        <h2 id = "linkToGoTo">{this.props.languageNow.info.goTo}</h2>
+                        </Link>
                      {<Footer languageNow={this.props.languageNow} dir = {this.props.direction}/>}  
                     </div>
                     )

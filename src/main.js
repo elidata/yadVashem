@@ -4,6 +4,7 @@ import {Info} from './info';
 import {LocationsList} from './locationsList';
 import {languages} from './languages';
 import { Switch, Route, BrowserRouter} from 'react-router-dom';
+import { GoTo } from './GoTo';
 
 
 export class Main extends Component {
@@ -50,6 +51,13 @@ export class Main extends Component {
                         <Route path = {`/${this.state.languageNow.path}/info`}
                         render = {(props) => 
                             <Info {...props}
+                            // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
+                            languageNow = {this.state.languageNow} 
+                            direction = {this.state.direction}/>
+                        }/>
+                        <Route path = {`/${this.state.languageNow.path}/goTo/`}
+                        render = {(props) => 
+                            <GoTo {...props}
                             // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
                             languageNow = {this.state.languageNow} 
                             direction = {this.state.direction}/>

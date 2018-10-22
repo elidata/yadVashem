@@ -75,6 +75,10 @@ a {
     position: absolute;;
     height: 90%;
 }
+#linkToGoTo{
+    border-radius: 10px;
+    border: 1px solid black;
+}
 /* .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;

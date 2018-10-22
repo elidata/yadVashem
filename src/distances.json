@@ -1,28 +1,32 @@
 {
  "distances":{
-     "Hertzelia":{
-        "Hertzelia":null,
-        "Jerusalem":345,
-        "Meitar":76,
-        "Migron":98
-     },
-     "Jerusalem":{
-        "Hertzelia":345,
-        "Jerusalem1":null,
-        "Meitar":476,
-        "Migron":938
-     },
-     "Meitar":{
-        "Hertzelia":76,
-        "Jerusalem":476,
-        "Meitar":null,
-        "Migron":98
-     },
-     "Migron":{
-        "Hertzelia":98,
-        "Jerusalem":938,
-        "Meitar":98,
-        "Migron":null
-     }
+     "Hertzelia":[
+         
+        {"name":"Hertzelia", "distance":0},
+        {"name":"Jerusalem", "distance": 345},
+        {"name":"Meitar", "distance":76},
+        {"name":"Migron", "distance":982}
+ ],
+     "Jerusalem":[
+         
+        {"name":"Hertzelia", "distance":345},
+        {"name":"Jerusalem", "distance": 0},
+        {"name":"Meitar", "distance":476},
+        {"name":"Migron", "distance":938}
+ ],
+     "Meitar":[
+         
+        {"name":"Hertzelia", "distance":76},
+        {"name":"Jerusalem", "distance": 476},
+        {"name":"Meitar", "distance":0},
+        {"name":"Migron", "distance":98}
+ ],
+     "Migron":[
+         
+        {"name":"Hertzelia", "distance":982},
+        {"name":"Jerusalem", "distance": 938},
+        {"name":"Meitar", "distance":98},
+        {"name":"Migron", "distance":0}
+ ]
  }   
 }

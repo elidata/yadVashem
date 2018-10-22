@@ -45,8 +45,6 @@ export let languages = {
         },
         info:{
             goTo: 'לאן אתם מעוניינים להמשיך?',
-            goToDistanceText:'אתר זה נמצא במרחק של',
-            goToDistanceinfo:'מטרים מכם.'
         },
         navBar:{
             home:'דף הבית',
@@ -94,8 +92,6 @@ export let languages = {
         },
         info:{
             goTo: 'Where do you want to go next?',
-            goToDistanceText:'The site is',
-            goToDistanceinfo:'meters from you.'
         },
         navBar:{
             home:'Home',
