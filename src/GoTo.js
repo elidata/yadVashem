@@ -13,7 +13,7 @@ export class GoTo extends Component {
         }
     }
     componentWillMount() {
-        function compare(a, b) {
+        function compare (a, b) {
             const distancedA = a.distance
             const distanceB = b.distance
             let comparison = 0;
@@ -36,7 +36,9 @@ export class GoTo extends Component {
     render() {
         return (
             <div dir={this.props.direction} >
+            <div className="header">
             <Navbar languageNow={this.props.languageNow}/>
+            </div>
                 <ul>
                     {/* do a map on the keys and according the URL choose which places to display */}
                     {this.state.chosenDistance.map(
@@ -46,7 +48,10 @@ export class GoTo extends Component {
                                     <li className = "goToList" key={i} value={item}>{Object.keys(this.locationsList).map((location, index) =>
                                         (location === this.state.chosenDistance[i].name && this.locationsList[location].label))}
                                         &nbsp;
-                                     {this.state.chosenDistance[i].distance}</li>
+                                        {this.state.chosenDistance[i].distance}
+                                        &nbsp;
+                                        {this.props.languageNow.goTo.meters}
+                                     </li>
                                 </Link>
 
                             )

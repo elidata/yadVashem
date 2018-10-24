@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import iconHome from './images/iconHome.png'
-import iconCamera from './images/iconCamera.png'
-import iconMap from './images/iconMap.png'
-import iconMenu from './images/iconMenu.png'
-import { Link } from 'react-router-dom'
+import iconHome from './images/iconHome.png';
+import iconCamera from './images/iconCamera.png';
+import iconMap from './images/iconMap.png';
+import iconMenu from './images/iconMenu.png';
+import { Link } from 'react-router-dom';
 
 export class Navbar extends Component {
     constructor(props) {
@@ -21,7 +21,7 @@ export class Navbar extends Component {
 
     render() {
         return (
-            <div dir={this.props.direction}>
+            <div dir={this.props.direction} className = "navBar">
                 {/* the first button  */}
                 <button style={{ display: `${this.state.displayButton}` }} onClick={this.HandleNav}><img src={iconMenu} alt="Menu icon" /></button>
                 <div id="Nav" style={{ width: ` ${this.state.width}%` }}>
@@ -39,13 +39,15 @@ export class Navbar extends Component {
                         <div className="navbarList">
                             <img
                                 src={iconCamera} alt="Camera icon" />&nbsp;&nbsp;
-                    {this.props.languageNow.navBar.shareAMoment}
+                                {this.props.languageNow.navBar.shareAMoment}
                         </div>
-                        <div className="navbarList">
-                            <img
-                                src={iconMap} alt="Map icon Home" />&nbsp;&nbsp;
-                    {this.props.languageNow.navBar.map}
-                        </div>
+                        <Link to={`/${this.props.languageNow.path}/map`}>
+                            <div className="navbarList">
+                                <img
+                                    src={iconMap} alt="Map icon Home" />&nbsp;&nbsp;
+                            {this.props.languageNow.navBar.map}
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

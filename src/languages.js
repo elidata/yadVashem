@@ -1,9 +1,9 @@
-import CoverPageLogoEnglish from './images/CoverPageLogoEnglish.png'
-import CoverPageLogoHebrew from './images/CoverPageLogoHebrew.png'
-import locationsImagesHertzelia from './images/LocationsImagesHertzelia.png'
-import locationsImagesJerusalem from './images/LocationsImagesJerusalem.png'
-import locationsImagesMeitar from './images/LocationsImagesMeitar.jpg'
-import locationsImagesMigron from './images/LocationsImagesMigron.jpg'
+import CoverPageLogoEnglish from './images/CoverPageLogoEnglish.png';
+import CoverPageLogoHebrew from './images/CoverPageLogoHebrew.png';
+import locationsImagesHertzelia from './images/LocationsImagesHertzelia.png';
+import locationsImagesJerusalem from './images/LocationsImagesJerusalem.png';
+import locationsImagesMeitar from './images/LocationsImagesMeitar.jpg';
+import locationsImagesMigron from './images/LocationsImagesMigron.jpg';
 import clapping from './audio/clapping.mp3';
 export let languages = {
     Hebrew: {
@@ -52,6 +52,13 @@ export let languages = {
             map: "מפה של יד ושם",
             webSite: "אתר האינטרנט של יד ושם"
         },
+        goTo:{
+            meters:"מ'"
+        },
+        map:{
+            title:'מפת יד ושם',
+            back: 'חזור'
+        },
 
     },
     English: {
@@ -87,7 +94,7 @@ export let languages = {
                 description: 'Migron is an Israeli settlement in the Binyamin Region of the West Bank, located within 2km of a former outpost by the same name, that was relocated to its present site on Sept. 2, 2012. The outpost was located 14 kilometers north of Jerusalem, it fell under the jurisdiction of the Mateh Binyamin Regional Council. It was the largest outpost of its kind, with a population of 300. The council says it was founded in 1999 and re-founded in 2001, on land registered before 1967 by the villagers of Burqa. The Israeli government contributed NIS 4.3 million from the Construction and Housing Ministry to build Migron. The international community considers Israeli settlements in the West Bank illegal under international law, but the Israeli government disputes this.',
                 vocalSrc: clapping,
                 id: 14
-            }
+            },
 
         },
         info: {
@@ -98,7 +105,15 @@ export let languages = {
             shareAMoment: "Share a moment",
             map: "Yad Vashem map",
             webSite: "Yad Vashem on the web"
-        }
+        },
+        goTo:{
+            meters:'m'
+        },
+        map:{
+            title:'Yad Vashem map',
+            back: 'back'
+        },
+
     },
     // object for things that stay the same between languages such as images
     Globals: {
@@ -128,8 +143,8 @@ export let languages = {
                 imgSrc: locationsImagesMigron,
                 handicap: true,
                 wheelchair: true
-            }
+            },
 
-        }
+        },
     },
 }
