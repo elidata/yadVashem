@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { CoverPage } from './coverPage';
 import { Info } from './info';
+import { Map } from './map';
 import { LocationsList } from './locationsList';
 import { languages } from './languages';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
@@ -62,6 +63,14 @@ export class Main extends Component {
                                     languageNow={this.state.languageNow}
                                     direction={this.state.direction} />
                             } />
+                        <Route path={`/${this.state.languageNow.path}/map/`}
+                        render={(props) =>
+                            <Map {...props}
+                                // passes props to coverPage: what language is chosen, the direction of text, the functions for changing the state in main to a different language
+                                languageNow={this.state.languageNow}
+                                direction={this.state.direction} />
+                        } />
+                            
                     </Switch>
                 </BrowserRouter>
 

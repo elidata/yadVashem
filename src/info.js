@@ -10,7 +10,9 @@ export class Info extends Component {
         return (
             <div dir={this.props.direction} className="overflow">
                 <br></br>
+                <div className="header">
                 <Navbar languageNow={this.props.languageNow} />
+                </div>
                 <br></br>
                 {/* maps over all places to find the place that equills to the URL n order to display it's information */}
                 {Object.keys(this.props.languageNow.locationsList).map((item, i) =>
