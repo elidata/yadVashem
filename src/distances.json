@@ -1,32 +1,32 @@
 {
  "distances":{
-     "Hertzelia":[
+     "HallOfNames":[
          
-        {"name":"Hertzelia", "distance":0},
-        {"name":"Jerusalem", "distance": 345},
-        {"name":"Meitar", "distance":76},
-        {"name":"Migron", "distance":982}
+        {"name":"HallOfNames", "distance":0},
+        {"name":"HallOfRemembrance", "distance": 345},
+        {"name":"ChildensMemorial", "distance":76},
+        {"name":"CattleCar", "distance":982}
  ],
-     "Jerusalem":[
+     "HallOfRemembrance":[
          
-        {"name":"Hertzelia", "distance":345},
-        {"name":"Jerusalem", "distance": 0},
-        {"name":"Meitar", "distance":476},
-        {"name":"Migron", "distance":938}
+        {"name":"HallOfNames", "distance":345},
+        {"name":"HallOfRemembrance", "distance": 0},
+        {"name":"ChildensMemorial", "distance":476},
+        {"name":"CattleCar", "distance":938}
  ],
-     "Meitar":[
+     "ChildensMemorial":[
          
-        {"name":"Hertzelia", "distance":76},
-        {"name":"Jerusalem", "distance": 476},
-        {"name":"Meitar", "distance":0},
-        {"name":"Migron", "distance":98}
+        {"name":"HallOfNames", "distance":76},
+        {"name":"HallOfRemembrance", "distance": 476},
+        {"name":"ChildensMemorial", "distance":0},
+        {"name":"CattleCar", "distance":98}
  ],
-     "Migron":[
+     "CattleCar":[
          
-        {"name":"Hertzelia", "distance":982},
-        {"name":"Jerusalem", "distance": 938},
-        {"name":"Meitar", "distance":98},
-        {"name":"Migron", "distance":0}
+        {"name":"HallOfNames", "distance":982},
+        {"name":"HallOfRemembrance", "distance": 938},
+        {"name":"ChildensMemorial", "distance":98},
+        {"name":"CattleCar", "distance":0}
  ]
  }   
 }

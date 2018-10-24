@@ -68,6 +68,8 @@ a {
 }
 .header{
     display: flex;
+    background-color: #2F4D7C;
+    height: 40px;
 }
 .overflow{
     width:95%; 
@@ -86,10 +88,7 @@ a {
     padding: 5px;
     border-radius: 15%;
 }
-.header{
-    background-color: #2F4D7C;
-    height: 40px;
-}
+
 /* .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
