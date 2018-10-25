@@ -4,28 +4,28 @@
          
         {"name":"HallOfNames", "distance":0},
         {"name":"HallOfRemembrance", "distance": 345},
-        {"name":"ChildensMemorial", "distance":76},
+        {"name":"ChildrensMemorial", "distance":76},
         {"name":"CattleCar", "distance":982}
  ],
      "HallOfRemembrance":[
          
         {"name":"HallOfNames", "distance":345},
         {"name":"HallOfRemembrance", "distance": 0},
-        {"name":"ChildensMemorial", "distance":476},
+        {"name":"ChildrensMemorial", "distance":476},
         {"name":"CattleCar", "distance":938}
  ],
-     "ChildensMemorial":[
+     "ChildrensMemorial":[
          
         {"name":"HallOfNames", "distance":76},
         {"name":"HallOfRemembrance", "distance": 476},
-        {"name":"ChildensMemorial", "distance":0},
+        {"name":"ChildrensMemorial", "distance":0},
         {"name":"CattleCar", "distance":98}
  ],
      "CattleCar":[
          
         {"name":"HallOfNames", "distance":982},
         {"name":"HallOfRemembrance", "distance": 938},
-        {"name":"ChildensMemorial", "distance":98},
+        {"name":"ChildrensMemorial", "distance":98},
         {"name":"CattleCar", "distance":0}
  ]
  }   

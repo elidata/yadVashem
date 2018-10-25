@@ -10,15 +10,15 @@ a {
     z-index: -1;
 }
 .rtllocationListImage{
-    width: 50px;
-    height: 85px;
+    /* width: 50px; */
+    height: 65px;
     float: right;
     padding: 5px;
     padding-top: 10px;
 }
 .ltrlocationListImage{
-    width: 50px;
-    height: 85px;
+    /* width: 50px; */
+    height: 65px;
     float: left;
     padding: 5px;
     padding-top: 10px;

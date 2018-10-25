@@ -57,7 +57,7 @@ export class LocationsList extends Component {
                                     {/* icon accessible with helper */}
                                     &nbsp;
                                 {languages.Globals.locationsList[item].wheelchair === true &&
-                                        <img src={iconWheelchair} alt="iconWheelchair" />}<br />
+                                        <img src={iconWheelchair} alt="iconWheelchair" />}
                                     {/* description about place */}
                                     {this.locationsList[item].description}
 
@@ -84,7 +84,7 @@ export class LocationsList extends Component {
                                         {/* icon accessible with helper */}
                                         &nbsp;
                             {languages.Globals.locationsList[item].wheelchair === true &&
-                                            <img src={iconWheelchair} alt="iconWheelchair" />}<br />
+                                            <img src={iconWheelchair} alt="iconWheelchair" />}
                                         {/* description about place */}
                                         {this.locationsList[item].description}
 
