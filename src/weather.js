@@ -11,9 +11,9 @@ export class Weather extends Component {
   getWeather = async () => {
     const city = 'Jerusalem';
     const country = 'Israel';
-    const api_callC = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}&units=metric`);
+    const api_callC = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}&units=metric`);
     const responseC = await api_callC.json();
-    const api_callF = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}&units=imperial`);
+    const api_callF = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}&units=imperial`);
     const responseF = await api_callF.json();
 
     this.setState({
