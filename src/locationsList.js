@@ -27,7 +27,8 @@ export class LocationsList extends Component {
     render() {
         return (
             <div className="AllLocationsList  overflow" dir={this.props.direction}>
-                <div className="header">
+                <div className="header" >
+                {/* style = {{ display: "inlineBlock"}} */}
                     <Navbar languageNow={this.props.languageNow} dir={this.props.direction} />
                     {/* search by id */}
                     <form >

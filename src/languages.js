@@ -79,19 +79,19 @@ export let languages = {
                 id: 11
             },
             HallOfRemembrance: {
-                label: 'HallOfRemembrance',
+                label: 'Hall of Remembrance',
                 description: <div><p>An imposing, tent-like basalt structure that allows visitors to pay their respects to the memories of the martyred dead. On the floor are the names of 22 Nazi murder sites - extermination and concentration camps, transit camps and killing sites - chosen from the hundreds of murder sites that existed throughout Europe. A memorial flame burns continuously, next to a crypt containing ashes of victims brought from the extermination camps. </p> <p>Architect- Aryeh Elhanani ,Eternal Flame- Kosso Eloul ,Southern gate- David Palombo Western gate: Bezalel Schatz </p></div>,
                 vocalSrc: clapping,
                 id: 12
             },
             ChildrensMemorial: {
-                label: 'ChildrensMemorial',
+                label: 'Childrens Memorial',
                 description: <div><p>This unique memorial, hollowed out from an underground cavern, is a tribute to the approximately 1.5 million Jewish children who perished during the Holocaust. Walking through the memorial, the visitor will hear the names of murdered children, their ages and countries of origin in the background.</p><p>Architect: Moshe Safdie</p></div>,
                 vocalSrc: clapping,
                 id: 13
             },
             CattleCar: {
-                label: 'CattleCar',
+                label: 'Cattle Car',
                 description: <div><p>The Memorial to the Deportees was established at Yad Vashem as a monument to the millions of Jews herded onto cattle-cars and transported from all over Europe to the extermination camps. An original German cattle-car given to Yad Vashem by the Polish authorities stands at the center of the memorial site.  On the adjacent wall, the testimony of survivor Avraham Krzepicki is inscribed. </p><p>Architect: Moshe Safdie</p></div>,
                 vocalSrc: clapping,
                 id: 14
